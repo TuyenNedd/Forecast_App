@@ -1,7 +1,7 @@
 import { signInWithPopup } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { auth, provider } from "../../firebase/firebase-config.jsx";
+import { auth, provider } from "../../firebase/firebase.config.jsx";
 import SignOut from "./signOutGG.jsx";
 function SignInGG() {
   const [user, setUser] = useState(null);
@@ -87,7 +87,7 @@ function SignInGG() {
                       viewBox="0 0 256 315"
                       version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
                       preserveAspectRatio="xMidYMid"
                       className="mr-2"
                     >

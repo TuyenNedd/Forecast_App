@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { getDatabase, ref, push } from "firebase/database";
-import { app } from "../../firebase/firebase-config.jsx";
+import { app } from "../../firebase/firebase.config.jsx";
 import api from "../../config/api.jsx";
 import NextDayForecast from "./NextDayForeCast.jsx";
 
@@ -80,9 +80,7 @@ const WeatherForecast = ({ selectedCity }) => {
                           src={`/src/assets/weather-icon/${forecast.weather[0].icon}.svg`}
                         ></img>
                       </div>
-                      <p className="">
-                        {Math.round(forecast.main.temp)}°C
-                      </p>
+                      <p className="">{Math.round(forecast.main.temp)}°C</p>
                     </div>
                   ))}
                 </div>
