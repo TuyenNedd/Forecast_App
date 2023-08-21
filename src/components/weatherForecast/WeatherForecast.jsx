@@ -7,6 +7,7 @@ import NextDayForecast from "./NextDayForeCast.jsx";
 
 const WeatherForecast = ({ selectedCity }) => {
   const [weatherData, setWeatherData] = useState(null);
+  const svgPath = "../../../src/assets/weather-icon/";
 
   useEffect(() => {
     // Fetch data from OpenWeatherMap API
@@ -77,7 +78,8 @@ const WeatherForecast = ({ selectedCity }) => {
                         <img
                           className="w-[185px]"
                           // src={`../../../src/assets/weather-icon/${forecast.weather[0].icon}.svg`}
-                          src={`/src/assets/weather-icon/${forecast.weather[0].icon}.svg`}
+                          // src={`/src/assets/weather-icon/${forecast.weather[0].icon}.svg`}
+                          src={`${svgPath}${forecast.weather[0].icon}.svg`}
                         ></img>
                       </div>
                       <p className="">{Math.round(forecast.main.temp)}°C</p>
