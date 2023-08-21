@@ -70,7 +70,7 @@ const WeatherDetail = ({ onCitySelect }) => {
     <>
       <input
         type=""
-        className="rounded-xl px-4 py-2 !focus:shadow-transparent !focus:border-none text-white bg-transparent shadow-transparent placeholder-red-50 w-fit ml-3 backBlur row-start-1 row-end-2"
+        className="rounded-xl px-4 py-2 !focus:shadow-transparent !focus:border-none text-white bg-transparent shadow-transparent placeholder-red-50 w-fit ml-5 backBlur row-start-1 row-end-2"
         placeholder="Search for a location..."
         onChange={(e) => setQuery(e.target.value)}
         value={query}
@@ -80,9 +80,9 @@ const WeatherDetail = ({ onCitySelect }) => {
             onCitySelect(e.target.value);
           }
         }}
-      />  
+      />
       {/* <Searching></Searching> */}
-      <div className="back-g grid grid-col-2 h-fit gap-6 col-start-1 col-end-2 m-3 text-white">
+      <div className="back-g grid grid-col-2 h-fit gap-6 col-start-1 col-end-2 m-6 text-white">
         <div className="mainWeather max-w-md shadow-lg rounded-xl col-start-1 col-end-2 backBlur flex items-center flex-col justify-center">
           <div className="flex flex-col justify-center space-y-4">
             {isLoading ? (
@@ -92,7 +92,7 @@ const WeatherDetail = ({ onCitySelect }) => {
             ) : error ? (
               <div className="text-lg font-semibold text-center ">{error}</div>
             ) : weather && weather.main ? (
-              <div className="rounded-lg p-4 space-y-2">
+              <div className="rounded-lg p-16 space-y-2">
                 <div className="text-3xl font-semibold">
                   {weather.name}, {weather.sys.country}
                 </div>
@@ -123,7 +123,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                 <div className="weatherIcon w-fit">
                   <img
                     className="w-[185px]"
-                    src={`../../../src/assets/weather-icon/${weather.weather[0].icon}.svg`}
+                    src={`../../../src/assets/png-icon/${weather.weather[0].icon}.svg`}
                   ></img>
                 </div>
               </div>
@@ -139,7 +139,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/weather-icon/Wind face.svg"
+                      src="../../../src/assets/png-icon/Wind-face.png"
                       alt=""
                       className="mr-1"
                     />
@@ -152,7 +152,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/weather-icon/Droplet.svg"
+                      src="../../../src/assets/png-icon/Droplet.png"
                       alt=""
                       className="mr-1"
                     />
@@ -165,7 +165,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/weather-icon/dashing away.svg"
+                      src="../../../src/assets/png-icon/dashing away.png"
                       alt=""
                       className="mr-1"
                     />
@@ -178,7 +178,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/weather-icon/Thermometer.svg"
+                      src="../../../src/assets/png-icon/Thermometer.png"
                       alt=""
                       className="mr-1"
                     />
@@ -191,7 +191,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/weather-icon/eyes.svg"
+                      src="../../../src/assets/png-icon/eyes.png"
                       alt=""
                       className="mr-1"
                     />
@@ -204,7 +204,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/weather-icon/Sunrise.svg"
+                      src="../../../src/assets/png-icon/Sunrise.png"
                       alt=""
                       className="mr-1"
                     />
@@ -217,7 +217,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/weather-icon/Sunset.svg"
+                      src="../../../src/assets/png-icon/Sunset.png"
                       alt=""
                       className="mr-1"
                     />
