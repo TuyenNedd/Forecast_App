@@ -3,7 +3,7 @@ import WeatherDetail from "../weatherDetail/WeatherDetail.jsx";
 import WeatherForecast from "../weatherForecast/WeatherForecast.jsx";
 import { useNavigate } from "react-router-dom";
 import { Dropdown, Avatar, Flowbite, DarkThemeToggle } from "flowbite-react"; // Import Dropdown and Avatar
-import SignOut from "../GGLogin/signOut.jsx";
+import SignOutGG from "../GGLogin/signOutGG.jsx";
 
 const Home = () => {
   const [selectedCity, setSelectedCity] = useState("");
@@ -95,7 +95,7 @@ const Home = () => {
               <Dropdown.Item className="">Earnings</Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item className="">
-                <SignOut onSignOut={handleSignOut} />
+                <SignOutGG onSignOut={handleSignOut} />
               </Dropdown.Item>
             </Dropdown>
           </Flowbite>

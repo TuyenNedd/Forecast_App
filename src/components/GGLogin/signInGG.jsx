@@ -2,8 +2,8 @@ import { signInWithPopup } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth, provider } from "../../firebase/firebase-config.jsx";
-import SignOut from "./signOut.jsx";
-function SignIn() {
+import SignOut from "./signOutGG.jsx";
+function SignInGG() {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
 
@@ -197,4 +197,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default SignInGG;

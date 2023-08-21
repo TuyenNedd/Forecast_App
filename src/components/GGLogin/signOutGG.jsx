@@ -1,6 +1,6 @@
 import React from "react";
 
-function SignOut({onSignOut}) {
+function SignOutGG({onSignOut}) {
   const logout = () => {
     localStorage.clear();
     window.location.reload();
@@ -11,4 +11,4 @@ function SignOut({onSignOut}) {
     </div>
   );
 }
-export default SignOut;
+export default SignOutGG;
