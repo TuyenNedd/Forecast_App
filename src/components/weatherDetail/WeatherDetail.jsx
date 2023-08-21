@@ -139,8 +139,8 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/png-icon/Wind-face.png"
-                      alt=""
+                      src="/assets/png-icon/Wind-face.png"
+                      alt="nkjaxna"
                       className="mr-1"
                     />
                     Wind
