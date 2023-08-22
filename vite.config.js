@@ -13,5 +13,4 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["react-router-dom"],
   },
-  base: "/vite-deploy/",
 });
