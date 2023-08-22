@@ -7,9 +7,7 @@ import NextDayForecast from "./NextDayForeCast.jsx";
 
 const WeatherForecast = ({ selectedCity }) => {
   const [weatherData, setWeatherData] = useState(null);
-  const svgPath =
-    "https://forecast-app-mocha.vercel.app/src/assets/weather-icon/";
-  // const svgPath = "../../../src/assets/weather-icon/";
+  const svgPath = "/weather-icon/";
 
   useEffect(() => {
     // Fetch data from OpenWeatherMap API

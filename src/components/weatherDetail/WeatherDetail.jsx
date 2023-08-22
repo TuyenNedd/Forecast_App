@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import api from "../../config/api.jsx";
-import Searching from "../Searching.jsx";
-
 const WeatherDetail = ({ onCitySelect }) => {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState(null);
@@ -123,7 +121,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                 <div className="weatherIcon w-fit">
                   <img
                     className="w-[185px]"
-                    src={`../../../src/assets/png-icon/${weather.weather[0].icon}.svg`}
+                    src={`/weather-icon/${weather.weather[0].icon}.svg`}
                   ></img>
                 </div>
               </div>
@@ -139,7 +137,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="/assets/png-icon/Wind-face.png"
+                      src="/weather-icon/Wind-face.svg"
                       alt="nkjaxna"
                       className="mr-1"
                     />
@@ -152,7 +150,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/png-icon/Droplet.png"
+                      src="/weather-icon/Droplet.svg"
                       alt=""
                       className="mr-1"
                     />
@@ -165,7 +163,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/png-icon/dashing away.png"
+                      src="/weather-icon/dashing away.svg"
                       alt=""
                       className="mr-1"
                     />
@@ -178,7 +176,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/png-icon/Thermometer.png"
+                      src="/weather-icon/Thermometer.svg"
                       alt=""
                       className="mr-1"
                     />
@@ -191,7 +189,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/png-icon/eyes.png"
+                      src="/weather-icon/eyes.svg"
                       alt=""
                       className="mr-1"
                     />
@@ -204,7 +202,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/png-icon/Sunrise.png"
+                      src="/weather-icon/Sunrise.svg"
                       alt=""
                       className="mr-1"
                     />
@@ -217,7 +215,7 @@ const WeatherDetail = ({ onCitySelect }) => {
                     <img
                       width={"30px"}
                       height={"30px"}
-                      src="../../../src/assets/png-icon/Sunset.png"
+                      src="/weather-icon/Sunset.svg"
                       alt=""
                       className="mr-1"
                     />

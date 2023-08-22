@@ -64,7 +64,7 @@ const Home = () => {
             muted
             loop
             preload="auto"
-            src="../src/assets/videos/bg.mp4"
+            src="/videos/bg.mp4"
           ></video>
         </div>
 

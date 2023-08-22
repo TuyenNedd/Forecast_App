@@ -41,7 +41,8 @@ const NextDayForecast = ({ forecastData }) => {
                 <img
                   className="w-[30px]"
                   // src={`../../../src/assets/weather-icon/${forecast.weather[0].icon}.svg`}
-                  src={`/src/assets/weather-icon/${forecast.weather[0].icon}.svg`}
+                  src={`/weather-icon/${forecast.weather[0].icon}.svg`}
+                  // src={`/src/assets/weather-icon/${forecast.weather[0].icon}.svg`}
                 ></img>
               </div>
               <div className="flex">
